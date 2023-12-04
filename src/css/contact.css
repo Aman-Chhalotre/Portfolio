@@ -1,0 +1,16 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 5;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
