@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Contact.css'
+import '../css/contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, } from '@fortawesome/free-solid-svg-icons'
 import {contact_animation} from "../animate/animate"
