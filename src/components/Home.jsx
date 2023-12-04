@@ -1,10 +1,45 @@
 
 import '../css/home.css'
-import { home_animation } from '../animate/animate'
+import { gsap } from 'gsap/dist/gsap'
+import { useEffect } from 'react'
 
-{home_animation}
+
 
 function Home() {
+
+
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.to("#banner",{
+      height:0,
+      duration:1.3,
+    })
+    gsap.to("#banner2",{
+      height:0,
+      duration:1.5,
+      delay:4
+    }),
+    gsap.to("#slide-up",{
+      y:-30,
+      height:0,
+      duration:1.2,
+      delay:1.5
+    }),gsap.to("#text",{
+      y:-70,
+      delay:4.4
+    }),gsap.to("#text",{
+      opacity:0,
+      delay:3.5
+    }),gsap.from('.intro',{
+      y:75,
+      opacity:0,
+      duration:2,
+      delay:5.5,
+    })
+  }
+  )
+  return () => ctx.revert();
+},[])
   
   return (
   <>

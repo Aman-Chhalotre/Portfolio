@@ -1,7 +1,22 @@
 import React from 'react'
-import {project_animation} from "../animate/animate"
-{project_animation}
+import { gsap } from 'gsap/dist/gsap'
+import { useEffect } from 'react'
+
+
 function Projects() {
+
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.from("#box > div",{
+        duration:1.5,
+        opacity:0,
+        stagger:0.3  
+      })
+  }
+  )
+  return () => ctx.revert();
+},[])
+
   return (
   <>
     <div className='h-screen laptop:h-full tablet:h-full mobile:h-full fold-screen:h-full'>

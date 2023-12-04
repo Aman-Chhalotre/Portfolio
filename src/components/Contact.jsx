@@ -2,9 +2,27 @@ import React from 'react'
 import '../css/contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, } from '@fortawesome/free-solid-svg-icons'
-import {contact_animation} from "../animate/animate"
-{contact_animation}
+import { gsap } from 'gsap/dist/gsap'
+import { useEffect } from 'react'
+
+
 function Contact() {
+
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.from("#box1 > div",{
+        x:-50,
+        duration:1.5,
+         opacity:0
+      }),gsap.from("#box2 > div",{
+        x:50,
+        duration:1.5,
+         opacity:0
+      })
+  }
+  )
+  return () => ctx.revert();
+},[])
 
   function copytoclipboard(text) {
     window.navigator.clipboard.writeText(text)

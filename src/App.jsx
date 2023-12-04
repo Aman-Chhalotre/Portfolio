@@ -10,9 +10,9 @@ const [sideBar, setSideBar] = useState(false)
 
   return (
     <SideBarContextProvider value={{sideBar,setSideBar}}>
-    <Header/>
-    <Outlet/>
-    <Footer/>
+      <Header/>
+      <Outlet/>
+      <Footer/>
     </SideBarContextProvider>
   )
 }

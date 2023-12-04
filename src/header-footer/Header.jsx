@@ -1,18 +1,36 @@
 
 
-import {header_animation} from '../animate/animate'
+// import {header_animation} from '../animate/animate'
 import { NavLink, } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Sidebar from './Sidebar'
 import { useSideBar} from '../context/toggle'
-{header_animation}
+import { gsap } from 'gsap/dist/gsap'
+import { useEffect } from 'react'
+
+// {header_animation}
 
 
 function Header() {
   const {setSideBar} = useSideBar()
   const {sideBar} = useSideBar()
 
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.from('#navlinks > li',{
+        y:-15,
+        duration:0.5,
+        stagger:0.2,
+        opacity:0
+    }),gsap.from('#button,#logo',{
+        opacity:0,
+        duration:0.8
+    })
+  }
+  )
+  return () => ctx.revert();
+},[])
   
 function handleClick (){
   setSideBar(!sideBar)

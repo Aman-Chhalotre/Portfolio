@@ -3,10 +3,31 @@ import '../css/qualification.css'
 import image from '../images/verticle-design.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
-import { qualification_animation } from '../animate/animate'
-{qualification_animation}
+import { gsap } from 'gsap/dist/gsap'
+import { useEffect } from 'react'
 
 function Qualification() {
+
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.from(".heading",{
+        y:-50,
+        opacity:0,
+        duration:1.5,
+    }),gsap.from('#degrees > div',{
+      x:-30,
+      duration:1.5,
+      opacity:0
+    }),gsap.from('#certificates > div',{
+      x:30,
+      duration:1.5,
+      opacity:0
+    })
+  }
+  )
+  return () => ctx.revert();
+},[])
+
   return (
     <div className=' flex justify-around my-20 text-center text-gray-200 fold-screen:block rounded-2xl'>
 

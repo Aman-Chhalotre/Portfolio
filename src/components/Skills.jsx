@@ -1,13 +1,33 @@
 import React from 'react'
 import '../css/skills.css'
-import { skills_animation } from '../animate/animate'
-{skills_animation}
+import { gsap } from 'gsap/dist/gsap'
+import { useEffect } from 'react'
 
 function Skills() {
+
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.from("#frontend > div",{
+        y:50,
+        duration:1.5,
+        opacity:0,
+    }),gsap.from("#backend > div",{
+        y:-50,
+        duration:1.5,
+        opacity:0
+    }),gsap.from("#frontend,#backend",{
+        opacity:0,
+        duration:1.5,
+    })
+  }
+  )
+  return () => ctx.revert();
+},[])
+
   return (
     <>
 
-      <div id='full' className='mobile:h-full tablet:h-full fold-screen:h-full h-screen rounded-xl'>
+      <div id='full' className='mobile:h-full tablet:h-full fold-screen:h-full h-full rounded-xl'>
 
         <div className='pt-38 m-10'>
 

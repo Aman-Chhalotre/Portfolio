@@ -1,11 +1,33 @@
 import React from 'react'
 import '../css/about.css'
 import img from '../images/aman.png'
-import { about_animation } from '../animate/animate'
-{about_animation}
+import { gsap } from 'gsap/dist/gsap'
+import { useEffect } from 'react'
+
+
 
 
 function About() {
+
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.from('.about-text',{
+        y:50,
+        duration:1.5,
+    }),gsap.from("#download-button,#aboutbg",{
+        opacity:0,
+        duration:1.5
+    }),gsap.from('#image',{
+        x:-50,
+        duration:1.8,
+        opacity:0
+    })
+  }
+  )
+  return () => ctx.revert();
+},[])
+  
+
   return (
     <div className=''>
         <div className='h-full m-10 fold-screen:m-2'>
