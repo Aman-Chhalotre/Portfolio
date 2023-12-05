@@ -46,7 +46,7 @@ function Home() {
   <div className='h-screen w-full overflow-hidden ' >
     <div id='homeBg' className='h-full relative '>
       <div id='banner' className='h-screen bg-teal-700 w-full z-40 relative' style={{zindex: 100}}></div>
-      <div id='banner2' className='h-screen bg-white w-ful z-10 flex justify-center items-center relative' >
+      <div id='banner2' className='h-screen bg-white w-full z-10 flex justify-center items-center relative text-center' >
         <div id='slide-up' className='w-80 h-16 bg-white absolute'></div>
         <div id='text' className='text-5xl mobile:text-3xl fold-screen:text-2xl font-bold text-black'>WELCOME...</div>
       </div>

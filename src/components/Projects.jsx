@@ -25,7 +25,7 @@ function Projects() {
             <div className='p-2 w-1/4 h-fit bg-indo-600 border-2 border-teal-600 rounded-lg tablet:mb-10 mobile:mb-10 fold-screen:mb-10 
             tablet:w-1/2 mobile:w-full fold-screen:w-full'>
               <div className='h-52 rounded bg-white'>
-                {/* bg remove karke image use karna hoi */}
+                
               </div>
               <div className='text-indigo-500 bg-white rounded'>
                 description
@@ -35,7 +35,7 @@ function Projects() {
             <div className='p-2 w-1/4 h-fit bg-indo-600 border-2 border-blue-500 rounded-lg tablet:mb-10 mobile:mb-10 fold-screen:mb-10 
             tablet:w-1/2 mobile:w-full fold-screen:w-full'>
               <div className='h-52 rounded bg-white'>
-                {/* bg remove karke image use karna hoi */}
+                
               </div>
               <div className='text-indigo-500 bg-white rounded'>
                 description
@@ -44,7 +44,7 @@ function Projects() {
 
             <div className='p-2 w-1/4 h-fit bg-indo-600 border-2 border-indigo-500 rounded-lg tablet:mb-10 mobile:mb-10 fold-screen:mb-10  tablet:w-1/2 mobile:w-full fold-screen:w-full'>
               <div className='h-52 rounded bg-white'>
-                {/* bg remove karke image use karna hoi */}
+                
               </div>
               <div className='text-indigo-500 bg-white rounded'>
                 description

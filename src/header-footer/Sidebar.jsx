@@ -16,7 +16,7 @@ function handleClick(){
 
   return (
     <>
-    <div className=' z-50 h-screen w-52  bg-slate-900 rounded'>
+    <div className=' z-50 h-screen w-60  bg-slate-900 rounded'>
 
       <div className='m-5'>
         <button onClick={() =>{handleClick()}}>
@@ -26,35 +26,35 @@ function handleClick(){
 
       <ul id='navlinks'className='m-8'>
 
-        <li>
+        <li onClick={()=>setSideBar(false)}>
           <NavLink to='/' className={({isActive}) => 
             `text-gray-300 hover:text-orange-600 duration-300 text-lg ${(isActive)?'text-orange-600':'text-gray-300'}`}>
             Home
             </NavLink>
         </li>
 
-        <li>
+        <li onClick={()=>setSideBar(false)}>
           <NavLink to='/about' className={({isActive}) => 
             `text-gray-300 hover:text-orange-600 duration-300 text-lg ${(isActive)?'text-orange-600':'text-gray-300'}`}>
             About
             </NavLink>
         </li> 
 
-        <li>
+        <li onClick={()=>setSideBar(false)}>
         <NavLink to='/skills' className={({isActive}) => 
           `text-gray-300 hover:text-orange-600 duration-300 text-lg ${(isActive)?'text-orange-600':'text-gray-300'}`}>
           Skills
           </NavLink>
         </li> 
 
-        <li>
+        <li onClick={()=>setSideBar(false)}>
         <NavLink to='/qualification' className={({isActive}) => 
           `text-gray-300 hover:text-orange-600 duration-300 text-lg ${(isActive)?'text-orange-600':'text-gray-300'}`}>
           Qualification
           </NavLink>  
         </li> 
         
-        <li>
+        <li onClick={()=>setSideBar(false)}>
         <NavLink to='/projects' className={({isActive}) => 
           `text-gray-300 hover:text-orange-600 duration-300 text-lg ${(isActive)?'text-orange-600':'text-gray-300'}`}>
           Projects
@@ -63,7 +63,7 @@ function handleClick(){
         
       </ul>
 
-      <div className='m-8'>
+      <div className='m-8' onClick={()=>setSideBar(false)}>
         <NavLink to='/contact' id='button' className='text-white outline outline-1 outline-slate-500 rounded-2xl p-2 px-5 hover:text-orange-400  hover:bg-zinc-900 duration-300 '>
         Contact
         </NavLink>
@@ -73,4 +73,4 @@ function handleClick(){
   )
 }
 
-export default Sidebar
+export default Sidebar;

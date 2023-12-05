@@ -1,6 +1,4 @@
 
-
-// import {header_animation} from '../animate/animate'
 import { NavLink, } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +7,6 @@ import { useSideBar} from '../context/toggle'
 import { gsap } from 'gsap/dist/gsap'
 import { useEffect } from 'react'
 
-// {header_animation}
 
 
 function Header() {
@@ -38,14 +35,14 @@ function handleClick (){
 
   return (
     <>
-    <nav className='h-16  flex justify-between fold-screen:mx-0 p-5 border-b border-slate-700 mx-10 z-50 '>
-        <div id='logo' className='text-lg text-gray-500 font-bold'> Portfolio.</div>
-        <div>
-            <ul id='navlinks'className='flex gap-20 laptop:gap-10 tablet:hidden mobile:hidden fold-screen:hidden'>
+    <nav className='h-16 mobile:h-36 flex justify-between mobile:block mobile:pb-10 fold-screen:mx-0 p-5 mobile:border-none border-b border-slate-700 z-50'>
+        <div id='logo' className='text-lg text-gray-500 font-bold mobile:text-sm'> Portfolio.</div>
+        <div className='mobile:text-center'>
+            <ul id='navlinks'className='flex gap-20 laptop:gap-10 tablet:gap-5 mobile:gap-3.5 mobile:text-sm mobile:pt-5 fold-screen:hidden tablet:text-sm '>
 
                 <li>
                   <NavLink to='/' className={({isActive}) => 
-                    `text-gray-300 hover:text-orange-600 duration-300 ${(isActive)?'text-orange-600 ':'text-gray-300'}`}>
+                    `text-gray-300 hover:text-orange-600 duration-300 ${(isActive)?'text-orange-600':'text-gray-300'}`}>
                     Home
                     </NavLink>
                 </li>
@@ -80,14 +77,15 @@ function handleClick (){
                 
             </ul>
         </div>
-        <div>
-        <NavLink to='/contact' id='button' className='text-white outline outline-1 outline-slate-500 rounded-2xl p-2 px-5 hover:text-orange-400  hover:bg-zinc-900 duration-300 mobile:hidden tablet:hidden fold-screen:hidden'>
+        <div className='mobile:text-end mobile:mt-5'>
+        <NavLink to='/contact' id='button' className='text-white outline outline-1 outline-slate-500 rounded-2xl mobile:py-1 mobile:text-sm 
+         p-2 px-5 hover:text-orange-400 hover:bg-zinc-900 duration-300 fold-screen:hidden'>
           Contact
         </NavLink>
         </div>
 
         
-        <div className={`hidden ${(sideBar)? 'tablet:hidden mobile:hidden fold-screen:hidden ':'tablet:block mobile:block fold-screen:block'} tablet:block mobile:block fold-screen:block `} >
+        <div className={`hidden ${(sideBar)? ' fold-screen:hidden ':' fold-screen:block'} fold-screen:block  text-end` } >
           <button onClick={() => handleClick()} >
             <FontAwesomeIcon icon={faBars} style={{color: "white"}} />
           </button>
@@ -101,4 +99,4 @@ function handleClick (){
   )
 }
 
-export default Header
+export default Header;

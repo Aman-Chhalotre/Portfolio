@@ -31,7 +31,7 @@ function Contact() {
     <>
     <div  className='h-screen mobile:mx-5 fold-screen:mx-0 mx-28 mt-16 '>
 
-      <div id="box1" className='flex h-1/3 mobile:w-full mb-8 tablet:block mobile:block fold-screen:block bg-slate-300 rounded-xl'>
+      <div id="box1" className='flex h-1/3 mobile:w-full mb-8 tablet:block mobile:block mobile:pt-3 fold-screen:pt-5 fold-screen:block bg-slate-300 rounded-xl'>
 
         <div className='w-1/2 tablet:w-auto mobile:w-fit fold-screen:w-auto font-bold self-center  ms-10 mb-8'>
           <h1 className='text-4xl w-fit laptop:text-3xl tablet:text-2xl mobile:text-xl fold-screen:text-lg text-stone-600'><FontAwesomeIcon icon={faPhone} className='text-3xl'/> Call</h1>
@@ -47,7 +47,7 @@ function Contact() {
         </div>
       </div>
 
-      <div id="box2" className='flex  h-1/3 mobile:w-full tablet:block mobile:block fold-screen:block bg-slate-300 rounded-xl'>
+      <div id="box2" className='flex  h-1/3 mobile:w-full tablet:block mobile:block mobile:pt-2 fold-screen:pt-5 fold-screen:block bg-slate-300 rounded-xl'>
 
         <div className='w-1/2 tablet:w-auto mobile:w-fit fold-screen:w-auto font-bold self-center ms-10 mb-8'>
           <h1 className='text-4xl w-fit text-stone-600 laptop:text-3xl tablet:text-2xl mobile:text-xl fold-screen:text-lg' ><FontAwesomeIcon icon="fa-brands fa-instagram" /> Instagram</h1>
