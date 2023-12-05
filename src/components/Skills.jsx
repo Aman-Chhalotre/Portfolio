@@ -29,7 +29,7 @@ function Skills() {
 
       <div id='full' className='mobile:h-full tablet:h-full fold-screen:h-full h-full rounded-xl'>
 
-        <div className='h-screen pt-38 m-10'>
+        <div className='h-full pt-38 m-10'>
 
             <div id="frontend" className='p-16 w-full text-xl rounded-xl '>
               <h1 className='font-bold text-4xl  text-teal-700 mb-5 '>Frontend</h1>
