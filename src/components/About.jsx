@@ -29,8 +29,8 @@ function About() {
   
 
   return (
-    <div className='h-full'>
-        <div className='h-screen m-10 fold-screen:m-2'>
+    <div className=''>
+        <div className=' m-10 fold-screen:m-2'>
           <div id='aboutbg' className='p-20 w-full flex rounded-2xl relative fold-screen:block fold-screen:p-5 mobile:block mobile:p-5 tablet:block'>
               
                 <img src={img} id='image' className='border-2 rounded-full w-60 bg-yellow-300 mobile:w-32 fold-screen:w-40 tablet:w-40 tablet:h-40 laptop:h-60 laptop:self-center '/>
