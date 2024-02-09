@@ -45,7 +45,7 @@ function About() {
           </div>
             
             <div className='flex justify-center'>
-              <a href="../images/AMAN_CHHALOTRE.Resume.docx" download={"./images/AMAN_CHHALOTRE.Resume.docx"} target='_blank'>
+              <a href="../images/AMAN_CHHALOTRE_Resume.docx" download={"./images/AMAN_CHHALOTRE_Resume.docx"} target='_blank'>
                 <button id='download-button' className='w-52 mt-20 p-3 border rounded-2xl border-slate-400 text-black font-bold bg-slate-200 mobile:w-40 mobile:text-sm' >Download Resume</button></a>
             </div>
             
