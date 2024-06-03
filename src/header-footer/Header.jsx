@@ -35,7 +35,7 @@ function Header() {
 
   return (
     <>
-      <nav className='sm:h-16 w-full h-36 sm:flex justify-between border-b block p-5 bg-white'>
+      <nav className='sm:h-16 w-full flex justify-between border-b p-5 bg-white'>
         <div id='logo' className='sm:text-lg text-gray-500 font-bold text-sm'> Portfolio.</div>
         <div className='text-center'>
           {/* <ul id='navlinks' className='flex lg:gap-20 md:gap-16 sm:gap-10 gap-5 sm:text-base text-sm sm:pt-0 pt-5'> */}
@@ -77,7 +77,7 @@ function Header() {
 
           {/* </ul>  */}
         </div>
-        <div className='text-end sm:mt-0 mt-5'>
+        <div className='text-end'>
           <NavLink to='/contact' id='button' className='font-medium text-black outline outline-1 outline-slate-500 rounded-2xl py-1 sm:text-base text-sm 
          p-2 px-5 hover:text-orange-400 hover:bg-zinc-900 duration-300 '>
             Contact
