@@ -35,17 +35,17 @@ function Header() {
 
   return (
     <>
-      <nav className='sm:h-16 w-full flex justify-between border-b p-5 bg-white'>
-        <div id='logo' className='sm:text-lg text-gray-500 font-bold text-sm'> Portfolio.</div>
+      <nav className='sm:h-16 w-full flex justify-around items-center border-b p-5 bg-white'>
+        <NavLink to='/' id='logo' className='sm:text-lg text-gray-500 font-bold text-sm'> Portfolio.</NavLink>
         <div className='text-center'>
           {/* <ul id='navlinks' className='flex lg:gap-20 md:gap-16 sm:gap-10 gap-5 sm:text-base text-sm sm:pt-0 pt-5'> */}
 
-          <li>
+          {/* <li>
             <NavLink to='/' className={({ isActive }) =>
               `font-medium hover:text-orange-600 duration-300 ${(isActive) ? 'text-orange-600' : 'text-black'}`}>
               Home
             </NavLink>
-          </li>
+          </li> */}
 
           {/* <li>
               <NavLink to='#about' className={({ isActive }) =>

@@ -38,7 +38,7 @@ function Home() {
     <>
       <section id='home' className='h-[100vh] w-full overflow-hidden bg-white' >
 
-        <div id='homeBg' className='h-full flex sm:flex-row flex-col items-center sm:justify-between sm:px-20 px-3'>
+        <div id='homeBg' className='h-full flex sm:flex-row flex-col items-center sm:justify-around mt-10 sm:gap-0 gap-5 sm:px-20 px-3'>
 
 
           <div className='text-black flex flex-col justify-center items-center '>

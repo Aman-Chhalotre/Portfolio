@@ -31,7 +31,7 @@ function About() {
   return (
     <section id='about' className='lg:h-[100vh] h-auto p-10 bg-white flex flex-col gap-20 items-end'>
 
-      <div id='bg-blur' className='about-text grid lg:grid-cols-2 grid-cols-1 items-center sm:w-fit mt-5 w-full sm:mt-10' >
+      <div id='bg-blur' className='about-text grid lg:grid-cols-2 grid-cols-1  items-center sm:w-fit mt-5 w-full sm:mt-10' >
         <img src={img} id='image' className='border-2 sm:w-60 w-48 bg-yellow-300' />
         <h1 className='sm:text-xl text-gray-600 font-bold pt-10 text-sm'>
           Hi, I'am <b>Aman Chhalotre</b> a Web developer with a strong Hands-on Knowledge in web development and a diverse skill set. I am confident in my ability to contribute to a dynamic team. I have completed a Web Development certification course. As a result, I have developed a deep understanding of frontend web development, UI development. I take pride in my attention to detail and my ability to create user-friendly interfaces.

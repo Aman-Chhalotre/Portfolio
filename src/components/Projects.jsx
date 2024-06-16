@@ -22,7 +22,7 @@ function Projects() {
   return (
     <>
       <div className='md:h-[100vh] h-auto bg-white'>
-        <div id='box' className='h-full w-fullrounded-xl grid lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 px-5'>
+        <div id='box' className='h-full w-fullrounded-xl grid lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 sm:px-10'>
 
           <a className='p-2 md:w-[300px] w-[250px] h-fit bg-indo-600 border-2 border-teal-600 rounded-lg mb-10' href='http://pg-life-aman-chhalotre.vercel.app' target='blank'>
             <div className='md:h-52 h-40 rounded bg-white'>
